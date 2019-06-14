@@ -1,0 +1,19 @@
+WITH raindays
+AS 
+(
+SELECT DATE(w.date)
+FROM weather w
+WHERE w.events = 'Rain'
+GROUP BY 1)
+	,
+	raintrips
+AS (
+SELECT rd.date AS raintripDate, t.trip_id, t.duration
+	FROM trips t
+	JOIN raindays rd
+	ON DATE(t.start_date) = rd.date
+)
+SELECT raintripDate, MAX(duration)
+	FROM raintrips
+	GROUP BY 1
+	ORDER BY 2 DESC
