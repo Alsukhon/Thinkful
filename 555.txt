@@ -1,0 +1,4 @@
+linearly combines multiple features
+PCA very important..how it works? limitations
+LDA tries to increase gap between features but PCA tries to keep variance
+https://sebastianraschka.com/Articles/2015_pca_in_3_steps.html
