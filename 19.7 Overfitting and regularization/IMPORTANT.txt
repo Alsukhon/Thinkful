@@ -1,0 +1,26 @@
+L1 & L2 regularization
+pros & cons of lasso vs ridge
+where they are both used
+
+
+
+Q&A
+---------
+1. Explain bias &var tradeoff from a model's perspective
+
+a model is highly biased, leads to high error in prediction. <---oversimplified, overtrained
+variance doesn't generalize well on test data. <--- too complex
+
+https://towardsdatascience.com/understanding-the-bias-variance-tradeoff-165e6942b229
+
+
+2. Why sparse matrix data works with Naive bayes? because it fulfills one of its 
+requirements which is independence of features
+
+revise PCA & eigenvalues
+
+
+
+
+
+
