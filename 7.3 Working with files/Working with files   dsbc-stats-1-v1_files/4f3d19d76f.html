@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html class="no-js" style="" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>Trinket: run code anywhere</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <link rel="icon" href="https://trinket.io/img/icons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://trinket.io/cache-prefix-e20b8faf/img/icons/apple-touch-icon-144x144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://trinket.io/cache-prefix-e20b8faf/img/icons/apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://trinket.io/cache-prefix-e20b8faf/img/icons/apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="https://trinket.io/cache-prefix-e20b8faf/img/icons/apple-touch-icon-precomposed.png">
+  <link rel="stylesheet" type="text/css" href="4f3d19d76f_data/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="4f3d19d76f_data/font-mfizz.css">
+  <link rel="stylesheet" type="text/css" href="4f3d19d76f_data/embed.css">
+  
+
+<link rel="stylesheet" type="text/css" href="4f3d19d76f_data/github.css">
+
+
+
+  <script async="" src="fbevents.js"></script><script async="" src="analytics.js"></script><script type="text/javascript">
+    trinket = {
+      config : {
+        apphostname       : 'trinket.io',
+        usersubdomains    :  true,
+        protocol          : 'https',
+        addthisurl        : '//s7.addthis.com/js/300/addthis_widget.js',
+        cachePrefix       : 'cache-prefix-',
+        prefixes          :  {"components":"cache-prefix-fa612a89","js":"cache-prefix-e20b8faf","css":"cache-prefix-e20b8faf","img":"cache-prefix-e20b8faf","fonts":"cache-prefix-e20b8faf","partials":"cache-prefix-e20b8faf","skulpt":"321e8852","pypyjs":"cache-prefix-e8e5bcf1"},
+        components        :  {"ace-builds":"v1.2.6.1rc2","anchor-js":"2.0.0","angular-file-saver":"1.1.3","angular-load":"0.1.2","angular-notifyjs":"0.1.0","angular-ui-router":"0.2.11","angular-ui-tree":"2.0.10","angular-ui-utils":"0.1.1","angular-xeditable":"0.1.8","bluebird":"3.5.1","d3":"3.4.11","filereader":"107f68c3b9","file-saver.js":"1.20150507.2","font-mfizz":"2.0.1","gsap":"1.15.0","jquery-ui":"https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1","jsdiff":"1.0.8","jszip":"3.1.4","lazysizes":"1.5.0","lodash":"2.4.1","modernizr":"2.7.2","ng-file-upload":"1.2.6","ngInfiniteScroll":"1.1.2","notifyjs":"0.4.2","opal":"0.6.2","restangular":"1.3.1","speakingurl":"1.1.5","video.js":"5.20.4","yamljs":"0.1.5"},
+        vendorHost        : 'https://trinket-vendor-assets.trinket.io',
+        broadcastHostname : 'broadcastapp.trinket.io',
+        broadcastPort     : '',
+        broadcastProtocol : 'https',
+        python3_api       : 'https://python3-5.trinket.io',
+        java_api          : 'https://java8.trinket.io',
+        R_api             : 'https://r3.trinket.io',
+        pygame_api        : 'https://pygame.trinket.io',
+        plans             : [{ "connect"  : "Connect"  },
+                             { "codeplus" : "Code+" }]
+      }
+    };
+    
+    </script>
+
+  <script src="4f3d19d76f_data/jquery.js" type="text/javascript"></script>
+
+  <script src="4f3d19d76f_data/modernizr.js" type="text/javascript"></script>
+  <script src="4f3d19d76f_data/detectizr.js" type="text/javascript"></script>
+  <script src="4f3d19d76f_data/md5.js" type="text/javascript"></script>
+  <script src="4f3d19d76f_data/sha1.js" type="text/javascript"></script>
+  <script src="4f3d19d76f_data/aes.js" type="text/javascript"></script>
+
+  <!--[if lte IE 9]>
+  <script type="text/javascript" src="/js/vendor/jQuery.XDomainRequest.js"></script>
+  <![endif]-->
+
+  
+  
+  
+  <script>
+    
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function() {
+      ga('create', 'UA-46899028-1', 'trinket.io');
+      
+    
+    ga('send', 'pageview');
+    
+    })();
+  </script>
+  
+  
+  
+  
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1441353372787187'); // Insert your pixel ID here.
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1441353372787187&ev=PageView&noscript=1"
+/></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+  
+
+  
+<style id="ace_editor.css">.ace_editor {position: relative;overflow: hidden;font: 12px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;direction: ltr;text-align: left;}.ace_scroller {position: absolute;overflow: hidden;top: 0;bottom: 0;background-color: inherit;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;cursor: text;}.ace_content {position: absolute;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;min-width: 100%;}.ace_dragging .ace_scroller:before{position: absolute;top: 0;left: 0;right: 0;bottom: 0;content: '';background: rgba(250, 250, 250, 0.01);z-index: 1000;}.ace_dragging.ace_dark .ace_scroller:before{background: rgba(0, 0, 0, 0.01);}.ace_selecting, .ace_selecting * {cursor: text !important;}.ace_gutter {position: absolute;overflow : hidden;width: auto;top: 0;bottom: 0;left: 0;cursor: default;z-index: 4;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;}.ace_gutter-active-line {position: absolute;left: 0;right: 0;}.ace_scroller.ace_scroll-left {box-shadow: 17px 0 16px -16px rgba(0, 0, 0, 0.4) inset;}.ace_gutter-cell {padding-left: 19px;padding-right: 6px;background-repeat: no-repeat;}.ace_gutter-cell.ace_error {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABOFBMVEX/////////QRswFAb/Ui4wFAYwFAYwFAaWGAfDRymzOSH/PxswFAb/SiUwFAYwFAbUPRvjQiDllog5HhHdRybsTi3/Tyv9Tir+Syj/UC3////XurebMBIwFAb/RSHbPx/gUzfdwL3kzMivKBAwFAbbvbnhPx66NhowFAYwFAaZJg8wFAaxKBDZurf/RB6mMxb/SCMwFAYwFAbxQB3+RB4wFAb/Qhy4Oh+4QifbNRcwFAYwFAYwFAb/QRzdNhgwFAYwFAbav7v/Uy7oaE68MBK5LxLewr/r2NXewLswFAaxJw4wFAbkPRy2PyYwFAaxKhLm1tMwFAazPiQwFAaUGAb/QBrfOx3bvrv/VC/maE4wFAbRPBq6MRO8Qynew8Dp2tjfwb0wFAbx6eju5+by6uns4uH9/f36+vr/GkHjAAAAYnRSTlMAGt+64rnWu/bo8eAA4InH3+DwoN7j4eLi4xP99Nfg4+b+/u9B/eDs1MD1mO7+4PHg2MXa347g7vDizMLN4eG+Pv7i5evs/v79yu7S3/DV7/498Yv24eH+4ufQ3Ozu/v7+y13sRqwAAADLSURBVHjaZc/XDsFgGIBhtDrshlitmk2IrbHFqL2pvXf/+78DPokj7+Fz9qpU/9UXJIlhmPaTaQ6QPaz0mm+5gwkgovcV6GZzd5JtCQwgsxoHOvJO15kleRLAnMgHFIESUEPmawB9ngmelTtipwwfASilxOLyiV5UVUyVAfbG0cCPHig+GBkzAENHS0AstVF6bacZIOzgLmxsHbt2OecNgJC83JERmePUYq8ARGkJx6XtFsdddBQgZE2nPR6CICZhawjA4Fb/chv+399kfR+MMMDGOQAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: 2px center;}.ace_gutter-cell.ace_warning {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAmVBMVEX///8AAAD///8AAAAAAABPSzb/5sAAAAB/blH/73z/ulkAAAAAAAD85pkAAAAAAAACAgP/vGz/rkDerGbGrV7/pkQICAf////e0IsAAAD/oED/qTvhrnUAAAD/yHD/njcAAADuv2r/nz//oTj/p064oGf/zHAAAAA9Nir/tFIAAAD/tlTiuWf/tkIAAACynXEAAAAAAAAtIRW7zBpBAAAAM3RSTlMAABR1m7RXO8Ln31Z36zT+neXe5OzooRDfn+TZ4p3h2hTf4t3k3ucyrN1K5+Xaks52Sfs9CXgrAAAAjklEQVR42o3PbQ+CIBQFYEwboPhSYgoYunIqqLn6/z8uYdH8Vmdnu9vz4WwXgN/xTPRD2+sgOcZjsge/whXZgUaYYvT8QnuJaUrjrHUQreGczuEafQCO/SJTufTbroWsPgsllVhq3wJEk2jUSzX3CUEDJC84707djRc5MTAQxoLgupWRwW6UB5fS++NV8AbOZgnsC7BpEAAAAABJRU5ErkJggg==");background-position: 2px center;}.ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAJ0Uk5TAAB2k804AAAAPklEQVQY02NgIB68QuO3tiLznjAwpKTgNyDbMegwisCHZUETUZV0ZqOquBpXj2rtnpSJT1AEnnRmL2OgGgAAIKkRQap2htgAAAAASUVORK5CYII=");background-position: 2px center;}.ace_dark .ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJFBMVEUAAAChoaGAgIAqKiq+vr6tra1ZWVmUlJSbm5s8PDxubm56enrdgzg3AAAAAXRSTlMAQObYZgAAAClJREFUeNpjYMAPdsMYHegyJZFQBlsUlMFVCWUYKkAZMxZAGdxlDMQBAG+TBP4B6RyJAAAAAElFTkSuQmCC");}.ace_scrollbar {position: absolute;right: 0;bottom: 0;z-index: 6;}.ace_scrollbar-inner {position: absolute;cursor: text;left: 0;top: 0;}.ace_scrollbar-v{overflow-x: hidden;overflow-y: scroll;top: 0;}.ace_scrollbar-h {overflow-x: scroll;overflow-y: hidden;left: 0;}.ace_print-margin {position: absolute;height: 100%;}.ace_text-input {position: absolute;z-index: 0;width: 0.5em;height: 1em;opacity: 0;background: transparent;-moz-appearance: none;appearance: none;border: none;resize: none;outline: none;overflow: hidden;font: inherit;padding: 0 1px;margin: 0 -1px;text-indent: -1em;-ms-user-select: text;-moz-user-select: text;-webkit-user-select: text;user-select: text;white-space: pre!important;}.ace_text-input.ace_composition {background: inherit;color: inherit;z-index: 1000;opacity: 1;text-indent: 0;}.ace_layer {z-index: 1;position: absolute;overflow: hidden;word-wrap: normal;white-space: pre;height: 100%;width: 100%;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;pointer-events: none;}.ace_gutter-layer {position: relative;width: auto;text-align: right;pointer-events: auto;}.ace_text-layer {font: inherit !important;}.ace_cjk {display: inline-block;text-align: center;}.ace_cursor-layer {z-index: 4;}.ace_cursor {z-index: 4;position: absolute;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;border-left: 2px solid;transform: translatez(0);}.ace_slim-cursors .ace_cursor {border-left-width: 1px;}.ace_overwrite-cursors .ace_cursor {border-left-width: 0;border-bottom: 1px solid;}.ace_hidden-cursors .ace_cursor {opacity: 0.2;}.ace_smooth-blinking .ace_cursor {-webkit-transition: opacity 0.18s;transition: opacity 0.18s;}.ace_editor.ace_multiselect .ace_cursor {border-left-width: 1px;}.ace_marker-layer .ace_step, .ace_marker-layer .ace_stack {position: absolute;z-index: 3;}.ace_marker-layer .ace_selection {position: absolute;z-index: 5;}.ace_marker-layer .ace_bracket {position: absolute;z-index: 6;}.ace_marker-layer .ace_active-line {position: absolute;z-index: 2;}.ace_marker-layer .ace_selected-word {position: absolute;z-index: 4;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}.ace_line .ace_fold {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;display: inline-block;height: 11px;margin-top: -2px;vertical-align: middle;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpi+P//fxgTAwPDBxDxD078RSX+YeEyDFMCIMAAI3INmXiwf2YAAAAASUVORK5CYII=");background-repeat: no-repeat, repeat-x;background-position: center center, top left;color: transparent;border: 1px solid black;border-radius: 2px;cursor: pointer;pointer-events: auto;}.ace_dark .ace_fold {}.ace_fold:hover{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACBJREFUeNpi+P//fz4TAwPDZxDxD5X4i5fLMEwJgAADAEPVDbjNw87ZAAAAAElFTkSuQmCC");}.ace_tooltip {background-color: #FFF;background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.1));background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1));border: 1px solid gray;border-radius: 1px;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);color: black;max-width: 100%;padding: 3px 4px;position: fixed;z-index: 999999;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;cursor: default;white-space: pre;word-wrap: break-word;line-height: normal;font-style: normal;font-weight: normal;letter-spacing: normal;pointer-events: none;}.ace_folding-enabled > .ace_gutter-cell {padding-right: 13px;}.ace_fold-widget {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;margin: 0 -12px 0 1px;display: none;width: 11px;vertical-align: top;background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42mWKsQ0AMAzC8ixLlrzQjzmBiEjp0A6WwBCSPgKAXoLkqSot7nN3yMwR7pZ32NzpKkVoDBUxKAAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: center;border-radius: 3px;border: 1px solid transparent;cursor: pointer;}.ace_folding-enabled .ace_fold-widget {display: inline-block;   }.ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42m3HwQkAMAhD0YzsRchFKI7sAikeWkrxwScEB0nh5e7KTPWimZki4tYfVbX+MNl4pyZXejUO1QAAAABJRU5ErkJggg==");}.ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGCAYAAAAG5SQMAAAAOUlEQVR42jXKwQkAMAgDwKwqKD4EwQ26sSOkVWjgIIHAzPiCgaqiqnJHZnKICBERHN194O5b9vbLuAVRL+l0YWnZAAAAAElFTkSuQmCCXA==");}.ace_fold-widget:hover {border: 1px solid rgba(0, 0, 0, 0.3);background-color: rgba(255, 255, 255, 0.2);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);}.ace_fold-widget:active {border: 1px solid rgba(0, 0, 0, 0.4);background-color: rgba(0, 0, 0, 0.05);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);}.ace_dark .ace_fold-widget {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHklEQVQIW2P4//8/AzoGEQ7oGCaLLAhWiSwB146BAQCSTPYocqT0AAAAAElFTkSuQmCC");}.ace_dark .ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAH0lEQVQIW2P4//8/AxQ7wNjIAjDMgC4AxjCVKBirIAAF0kz2rlhxpAAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAFCAYAAACAcVaiAAAAHElEQVQIW2P4//+/AxAzgDADlOOAznHAKgPWAwARji8UIDTfQQAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget:hover {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);background-color: rgba(255, 255, 255, 0.1);}.ace_dark .ace_fold-widget:active {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);}.ace_fold-widget.ace_invalid {background-color: #FFB4B4;border-color: #DE5555;}.ace_fade-fold-widgets .ace_fold-widget {-webkit-transition: opacity 0.4s ease 0.05s;transition: opacity 0.4s ease 0.05s;opacity: 0;}.ace_fade-fold-widgets:hover .ace_fold-widget {-webkit-transition: opacity 0.05s ease 0.05s;transition: opacity 0.05s ease 0.05s;opacity:1;}.ace_underline {text-decoration: underline;}.ace_bold {font-weight: bold;}.ace_nobold .ace_bold {font-weight: normal;}.ace_italic {font-style: italic;}.ace_error-marker {background-color: rgba(255, 0, 0,0.2);position: absolute;z-index: 9;}.ace_highlight-marker {background-color: rgba(255, 255, 0,0.2);position: absolute;z-index: 8;}.ace_br1 {border-top-left-radius    : 3px;}.ace_br2 {border-top-right-radius   : 3px;}.ace_br3 {border-top-left-radius    : 3px; border-top-right-radius:    3px;}.ace_br4 {border-bottom-right-radius: 3px;}.ace_br5 {border-top-left-radius    : 3px; border-bottom-right-radius: 3px;}.ace_br6 {border-top-right-radius   : 3px; border-bottom-right-radius: 3px;}.ace_br7 {border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px;}.ace_br8 {border-bottom-left-radius : 3px;}.ace_br9 {border-top-left-radius    : 3px; border-bottom-left-radius:  3px;}.ace_br10{border-top-right-radius   : 3px; border-bottom-left-radius:  3px;}.ace_br11{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-left-radius:  3px;}.ace_br12{border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br13{border-top-left-radius    : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br14{border-top-right-radius   : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br15{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;}
+/*# sourceURL=ace/css/ace_editor.css */</style><style id="ace-tm">.ace-tm .ace_gutter {background: #f0f0f0;color: #333;}.ace-tm .ace_print-margin {width: 1px;background: #e8e8e8;}.ace-tm .ace_fold {background-color: #6B72E6;}.ace-tm {background-color: #FFFFFF;color: black;}.ace-tm .ace_cursor {color: black;}.ace-tm .ace_invisible {color: rgb(191, 191, 191);}.ace-tm .ace_storage,.ace-tm .ace_keyword {color: blue;}.ace-tm .ace_constant {color: rgb(197, 6, 11);}.ace-tm .ace_constant.ace_buildin {color: rgb(88, 72, 246);}.ace-tm .ace_constant.ace_language {color: rgb(88, 92, 246);}.ace-tm .ace_constant.ace_library {color: rgb(6, 150, 14);}.ace-tm .ace_invalid {background-color: rgba(255, 0, 0, 0.1);color: red;}.ace-tm .ace_support.ace_function {color: rgb(60, 76, 114);}.ace-tm .ace_support.ace_constant {color: rgb(6, 150, 14);}.ace-tm .ace_support.ace_type,.ace-tm .ace_support.ace_class {color: rgb(109, 121, 222);}.ace-tm .ace_keyword.ace_operator {color: rgb(104, 118, 135);}.ace-tm .ace_string {color: rgb(3, 106, 7);}.ace-tm .ace_comment {color: rgb(76, 136, 107);}.ace-tm .ace_comment.ace_doc {color: rgb(0, 102, 255);}.ace-tm .ace_comment.ace_doc.ace_tag {color: rgb(128, 159, 191);}.ace-tm .ace_constant.ace_numeric {color: rgb(0, 0, 205);}.ace-tm .ace_variable {color: rgb(49, 132, 149);}.ace-tm .ace_xml-pe {color: rgb(104, 104, 91);}.ace-tm .ace_entity.ace_name.ace_function {color: #0000A2;}.ace-tm .ace_heading {color: rgb(12, 7, 255);}.ace-tm .ace_list {color:rgb(185, 6, 144);}.ace-tm .ace_meta.ace_tag {color:rgb(0, 22, 142);}.ace-tm .ace_string.ace_regex {color: rgb(255, 0, 0)}.ace-tm .ace_marker-layer .ace_selection {background: rgb(181, 213, 255);}.ace-tm.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px white;}.ace-tm .ace_marker-layer .ace_step {background: rgb(252, 255, 0);}.ace-tm .ace_marker-layer .ace_stack {background: rgb(164, 229, 101);}.ace-tm .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgb(192, 192, 192);}.ace-tm .ace_marker-layer .ace_active-line {background: rgba(0, 0, 0, 0.07);}.ace-tm .ace_gutter-active-line {background-color : #dcdcdc;}.ace-tm .ace_marker-layer .ace_selected-word {background: rgb(250, 250, 255);border: 1px solid rgb(200, 200, 250);}.ace-tm .ace_indent-guide {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;}
+/*# sourceURL=ace/css/ace-tm */</style><style>    .error_widget_wrapper {        background: inherit;        color: inherit;        border:none    }    .error_widget {        border-top: solid 2px;        border-bottom: solid 2px;        margin: 5px 0;        padding: 10px 40px;        white-space: pre-wrap;    }    .error_widget.ace_error, .error_widget_arrow.ace_error{        border-color: #ff5a5a    }    .error_widget.ace_warning, .error_widget_arrow.ace_warning{        border-color: #F1D817    }    .error_widget.ace_info, .error_widget_arrow.ace_info{        border-color: #5a5a5a    }    .error_widget.ace_ok, .error_widget_arrow.ace_ok{        border-color: #5aaa5a    }    .error_widget_arrow {        position: absolute;        border: solid 5px;        border-top-color: transparent!important;        border-right-color: transparent!important;        border-left-color: transparent!important;        top: -5px;    }</style><style>.ace_snippet-marker {    -moz-box-sizing: border-box;    box-sizing: border-box;    background: rgba(194, 193, 208, 0.09);    border: 1px dotted rgba(211, 208, 235, 0.62);    position: absolute;}</style><style>.ace_editor.ace_autocomplete .ace_marker-layer .ace_active-line {    background-color: #CAD6FA;    z-index: 1;}.ace_editor.ace_autocomplete .ace_line-hover {    border: 1px solid #abbffe;    margin-top: -1px;    background: rgba(233,233,253,0.4);}.ace_editor.ace_autocomplete .ace_line-hover {    position: absolute;    z-index: 2;}.ace_editor.ace_autocomplete .ace_scroller {   background: none;   border: none;   box-shadow: none;}.ace_rightAlignedText {    color: gray;    display: inline-block;    position: absolute;    right: 4px;    text-align: right;    z-index: -1;}.ace_editor.ace_autocomplete .ace_completion-highlight{    color: #000;    text-shadow: 0 0 0.01em;}.ace_editor.ace_autocomplete {    width: 280px;    z-index: 200000;    background: #fbfbfb;    color: #444;    border: 1px lightgray solid;    position: fixed;    box-shadow: 2px 3px 5px rgba(0,0,0,.2);    line-height: 1.4;}</style><meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge-only"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large-only"><meta class="foundation-mq-large"><meta class="foundation-mq-medium-only"><meta class="foundation-mq-medium"><meta class="foundation-mq-small-only"><meta class="foundation-mq-small"><style></style><script src="4f3d19d76f_data/theme-xcode.js"></script><script src="4f3d19d76f_data/mode-python.js"></script><style id="ace-xcode">.ace-xcode .ace_gutter {background: #e8e8e8;color: #333}.ace-xcode .ace_print-margin {width: 1px;background: #e8e8e8}.ace-xcode {background-color: #FFFFFF;color: #000000}.ace-xcode .ace_cursor {color: #000000}.ace-xcode .ace_marker-layer .ace_selection {background: #B5D5FF}.ace-xcode.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px #FFFFFF;}.ace-xcode .ace_marker-layer .ace_step {background: rgb(198, 219, 174)}.ace-xcode .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid #BFBFBF}.ace-xcode .ace_marker-layer .ace_active-line {background: rgba(0, 0, 0, 0.071)}.ace-xcode .ace_gutter-active-line {background-color: rgba(0, 0, 0, 0.071)}.ace-xcode .ace_marker-layer .ace_selected-word {border: 1px solid #B5D5FF}.ace-xcode .ace_constant.ace_language,.ace-xcode .ace_keyword,.ace-xcode .ace_meta,.ace-xcode .ace_variable.ace_language {color: #C800A4}.ace-xcode .ace_invisible {color: #BFBFBF}.ace-xcode .ace_constant.ace_character,.ace-xcode .ace_constant.ace_other {color: #275A5E}.ace-xcode .ace_constant.ace_numeric {color: #3A00DC}.ace-xcode .ace_entity.ace_other.ace_attribute-name,.ace-xcode .ace_support.ace_constant,.ace-xcode .ace_support.ace_function {color: #450084}.ace-xcode .ace_fold {background-color: #C800A4;border-color: #000000}.ace-xcode .ace_entity.ace_name.ace_tag,.ace-xcode .ace_support.ace_class,.ace-xcode .ace_support.ace_type {color: #790EAD}.ace-xcode .ace_storage {color: #C900A4}.ace-xcode .ace_string {color: #DF0002}.ace-xcode .ace_comment {color: #008E00}.ace-xcode .ace_indent-guide {background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==) right repeat-y}
+/*# sourceURL=ace/css/ace-xcode */</style></head>
+<body id="embed_content_python3" data-no-metrics="false" data-assignment="false" data-view-only="false" class="mode-standard  remixable" data-is-mobile="false">
+  <input id="whoami" type="hidden" value="">
+  
+  <input id="user" type="hidden" value="">
+  
+  <script>
+    trinketObject = {"id":"588a2a98db99de2f23ab82ef","code":"[{&quot;name&quot;:&quot;main.py&quot;,&quot;content&quot;:&quot;# Let&#39;s open the poem.txt file, create a file object, and print out the\\n# file text line by line.\\n# Note the poem.txt tab above.\\nwith open(&#39;poem.txt&#39;) as poem_file:\\n    text = poem_file.readlines()\\n    print(\\&quot;This file is {} lines long\\&quot;.format(len(text)))\\n    for line in text:\\n        print(line)\\n\\n# Try loading and printing the purchases.csv file line by line just\\n# just like we did for poem.txt.\\n\\n&quot;},{&quot;name&quot;:&quot;poem.txt&quot;,&quot;content&quot;:&quot;Beautiful is better than ugly.\\nExplicit is better than implicit.\\nSimple is better than complex.\\nComplex is better than complicated.\\nFlat is better than nested.\\nSparse is better than dense.\\nReadability counts.\\nSpecial cases aren&#39;t special enough to break the rules.\\nAlthough practicality beats purity.\\nErrors should never pass silently.\\nUnless explicitly silenced.\\nIn the face of ambiguity, refuse the temptation to guess.\\nThere should be one-- and preferably only one --obvious way to do it.\\nAlthough that way may not be obvious at first unless you&#39;re Dutch.\\nNow is better than never.\\nAlthough never is often better than *right* now.\\nIf the implementation is hard to explain, it&#39;s a bad idea.\\nIf the implementation is easy to explain, it may be a good idea.\\nNamespaces are one honking great idea -- let&#39;s do more of those!&quot;},{&quot;name&quot;:&quot;purchases.csv&quot;,&quot;content&quot;:&quot;,country,ad_views,items_purchased\\nGeorge,US,16,2\\nJohn,CAN,42,1\\nThomas,CAN,32,0\\nJames,US,13,8\\nAndrew,CAN,63,0\\nMartin,US,19,5\\nWilliam,US,65,7\\nZachary,US,23,3\\nMillard,CAN,16,0\\nFranklin,US,77,5&quot;}]","lang":"python3","name":"files open","description":null,"groupId":null,"_parent":null,"_origin_id":null,"_owner":"583f4ca1584748101f575ab0","hash":"752ab9827a29bdf84e8620f84bab736433aa821a","shortCode":"4f3d19d76f","lastUpdated":"2017-01-26T17:11:16.576Z","metrics":{"linkViews":9,"linkShares":6,"runs":1370,"embedViews":8341},"lastView":{"viewType":"embedViews","viewedOn":"2019-11-03T15:43:38.438Z","referer":"https://courses.thinkful.com/dsbc-stats-1-v1/uuid/ca522d53-64d5-4b55-8d97-1f2d21791324","address":"98.224.236.53"},"snapshot":"https://trinket-snapshots.trinket.io/4f3d19d76f-1485450685231.png","assets":[],"displayOnly":null,"original":null,"settings":{"testsEnabled":false},"submissionState":null,"submissionOpts":{},"submittedOn":null,"slug":"","published":false};
+  
+    draftObject   = undefined;
+    
+  
+  </script>
+  <input id="shareType" type="hidden" value="python3">
+  <input id="proxy" type="hidden" value="https://trinket.io/proxy">
+
+  <div id="wrapper" class="off-canvas-wrap owner-view row" data-offcanvas="">
+    <div class="trinket-wrapper inner-wrap">
+
+    
+
+      <nav id="menu" class="trinket-header " data-interface="top-menu">
+        <section class="left">
+          <div class="icon-bar left-menu-toggle">
+            <a class="item menu-button left-off-canvas-toggle" data-action="menu.options">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        </section>
+        <section class="left title-bar">
+          <span title="hosted by trinket.io" data-dropdown="brand-menu" aria-controls="brand-menu" aria-expanded="false">
+            <img class="show-for-large-up" src="4f3d19d76f_data/trinket-logo.png">
+            <img class="show-for-medium-down" src="4f3d19d76f_data/trinket-logo-circles.png">
+          </span>
+          <ul id="brand-menu" class="f-dropdown" data-dropdown-content="" aria-hidden="true" tabindex="-1">
+            <li><a id="brand">View on trinket.io</a></li>
+          </ul>
+          
+<section class="trinket-label">
+  <i class="icon-python"> <label class="show-for-small-only">3</label></i>
+  <label class="show-for-large-up">Python3</label>
+</section>
+
+        </section>
+        <section class="mode-toolbar left" data-mode="interact" role="menubar">
+          <div class="icon-bar label-right">
+            
+
+<a class="edit-it menu-button item allow-original show-for-small-only" data-action="code.edit" title="Edit the code.">
+  <i class="fa fa-pencil"></i>
+  <label class="show-for-large-up">Code</label>
+</a>
+<a class="button run-it menu-button item split allow-original" data-action="code.run" title="View the result." role="button" aria-label="Run Button" tabindex="0">
+  <i class="fa fa-play"></i>
+  <label class="show-for-large-up">Run</label>
+  <span data-dropdown="run-options" data-options="align:bottom"></span>
+</a>
+
+
+            
+            <button class="show-for-medium-up button split item menu-button" data-action="sharing.social" data-dropdown="share-options" data-options="align:bottom" role="button" aria-label="Share Menu" aria-controls="share-options"><i class="fa fa-share-alt"></i><label id="share_button_label" class="show-for-large-up">Share</label><span data-dropdown="share-options" data-options="align:bottom" role="menu"></span></button>
+            
+            
+            
+          </div>
+        </section>
+        
+        <section class="mode-indicator right">
+          <div class="icon-bar">
+            <div class="item"><div id="draftMessage" class="hide draft-message"></div></div>
+            
+            
+            <!-- no user, remix if trinket.id, copy if inline -->
+            <a title="Remix this trinket." class="save-it menu-button allow-original ui-option guest-option has-tip item right-off-canvas-toggle" data-action="menu.user">
+              <i class="fa fa-save"></i>
+              <label class="show-for-medium-up">Remix</label>
+            </a>
+            <!-- user, no trinket.id -->
+            <a title="Save a copy of this trinket." class="save-it create-copy menu-button allow-original ui-option user-option owner-option has-tip item  hide" data-action="menu.upgrade">
+              <i class="fa fa-save"></i>
+              <label class="show-for-medium-up">Copy</label>
+            </a>
+            <!-- user, trinket.id -->
+            <a title="Remix this trinket." class="save-it create-remix menu-button allow-original ui-option user-option owner-option has-tip item green-highlight hide" data-action="menu.upgrade">
+              <i class="fa fa-code-fork"></i>
+              <label class="show-for-medium-up">Remix</label>
+            </a>
+            <!-- user, has remix, viewing remix -->
+            <a title="Save changes to your Remix." class="save-it save-remix menu-button allow-original ui-option user-option owner-option has-tip item blue-highlight  hide" data-action="menu.upgrade">
+              <i class="fa fa-save"></i>
+              <label class="show-for-medium-up">Save</label>
+            </a>
+            <!-- user, has remix, viewing original -->
+            <a title="Revert your Remix to this Original." class="save-it revert-remix menu-button allow-original ui-option user-option owner-option has-tip item  hide" data-action="menu.upgrade">
+              <i class="fa fa-fast-backward"></i>
+              <label class="show-for-medium-up">Restore</label>
+            </a>
+            
+          </div>
+          <div class="remix-switch item" data-children-count="1">
+            <input type="checkbox" name="remix-switch" class="remix-switch-checkbox" id="version-toggle" checked="checked">
+            <label class="remix-switch-label" for="version-toggle">
+              <span class="remix-switch-inner"></span>
+              <span class="remix-switch-switch"></span>
+            </label>
+          </div>
+          <div class="icon-bar">
+            <a class="item right-menu-toggle right-off-canvas-toggle menu-button" data-action="menu.user">
+              <i class="fa fa-user ui-option owner-option user-option hide"></i>
+              <i class="fa fa-sign-in ui-option guest-option"></i>
+            </a>
+          </div>
+        </section>
+        
+        <section class="mode-toolbar right hide">
+          <div class="icon-bar">
+            <a id="gallery-item" title="Visit the Trinket User Gallery" class="menu-button has-tip item show-for-medium-up" data-action="view.gallery">
+              <i class="fa fa-th-large"></i>
+              <label class="show-for-medium-up">Gallery</label>
+            </a>
+          </div>
+        </section>
+      </nav>
+
+      <aside class="left-off-canvas-menu" data-interface="trinket-menu" aria-hidden="true">
+  <ul class="off-canvas-list mode-menu" data-mode="interact">
+    
+    <li><label>Menu</label></li>
+    
+    
+    <li>
+      <a class="reset-it menu-button" data-action="code.reset"><i class="fa fa-refresh"></i>Reset</a>
+    </li>
+    
+    <li>
+      <a class="menu-button" data-action="mode.fullscreen" data-no-analytics="true"><i class="fa fa-expand"></i>Fullscreen</a>
+    </li>
+    
+    <li>
+      <a class="menu-button" data-action="mode.download"><i class="fa fa-download"></i>Download</a>
+    </li>
+    
+    
+    
+    
+    <li><label>Sharing</label></li>
+    <li>
+      <a class="share-it menu-button" data-action="sharing.share" aria-controls="share-options"><i class="fa fa-share"></i>Share</a>
+    </li>
+    <li>
+      <a class="embed-it menu-button" data-action="sharing.embed"><i class="fa fa-code"></i>Embed</a>
+    </li>
+    <li>
+      <a class="email-it menu-button" data-action="sharing.email"><i class="fa fa-envelope-o"></i>Email</a>
+    </li>
+    
+    
+    <li><label>Font Size</label></li>
+    <li>
+      <a class="menu-button font-size small-font left" data-action="code.fontsize" data-data="1em">aA</a>
+      <a class="menu-button font-size medium-font left" data-action="code.fontsize" data-data="1.5em">aA</a>
+      <a class="menu-button font-size large-font left" data-action="code.fontsize" data-data="2em">aA</a>
+    </li>
+    
+  </ul>
+</aside>
+
+
+      
+      <aside class="right-off-canvas-menu" data-interface="user-menu" aria-hidden="true">
+        <ul id="userMenu" class="off-canvas-list">
+    <li>
+      <form id="accountForm" data-children-count="2">
+        <span class="message hide"></span>
+        <input name="email" type="email" placeholder="Email" required="" data-kwimpalastatus="alive" data-kwimpalaid="1572795818912-3">
+        <input name="password" type="password" placeholder="Password" required="" data-kwimpalastatus="alive" data-kwimpalaid="1572795818912-2">
+        <a id="login" name="login" class="button secondary small" data-action="login">Log In</a>
+        <a id="register" name="register" class="button primary small" data-action="signup">Create Account</a>
+      <span style="opacity: 1; left: 195.2px; top: 71.2px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: medium none; display: inline; visibility: visible; z-index: auto;"></span><span style="opacity: 1; left: 195.2px; top: 16.2px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: medium none; display: inline; visibility: visible; z-index: auto;"></span></form>
+    </li>
+  </ul>
+      </aside>
+      
+
+      <section class="trinket-content main-section" data-interface="content">
+        <div id="flashMessage" class="container hide">
+          <div id="flashContent"></div>
+        </div>
+        <div class="trinket-content-wrapper " role="main">
+          <div id="content-overlay" class="hide" data-interface="overlay"></div>
+          
+  <input id="honeypot" type="text" tabindex="-1">
+  <input id="start-value" type="hidden" value="code">
+  <input id="runOption-value" type="hidden" value="run">
+  <input id="runMode-value" type="hidden" value="">
+
+  <div id="editor" class="code-editor" data-interface="editor"><div class="code-editor" data-interface="code-editor"><div class="tab-nav"><dl class="left-options"><dd class="tab-button"><a class="tab-scroll-link left-arrow" data-direction="-1"><i class="fa fa-chevron-left"></i></a></dd><dd class="tab-button"><a class="tab-scroll-link right-arrow" data-direction="1"><i class="fa fa-chevron-right"></i></a></dd></dl><dl class="scrollable-content" role="tablist" aria-label="File tabs"><dd class="tab permanent active"><a class="file-tab-link" aria-label="main.py tab" role="tab"><span class="file-name">main.py</span><span class="tab-options-link menu-button" data-action="file.options" role="button" tabindex="0"></span></a></dd><dd class="tab"><a class="file-tab-link" aria-label="poem.txt tab" role="tab"><span class="file-name">poem.txt</span><span class="tab-options-link menu-button" data-action="file.options" role="button" tabindex="0"></span></a></dd><dd class="tab"><a class="file-tab-link" aria-label="purchases.csv tab" role="tab"><span class="file-name">purchases.csv</span><span class="tab-options-link menu-button" data-action="file.options" role="button" tabindex="0"></span></a></dd></dl><dl class="right-options"><dd class="tab-button" title="Create text file"><a class="add-file-link menu-button" data-action="file.add" aria-label="Add new file" role="button"><i class="fa fa-plus"></i></a></dd><dd class="tab-button" title="Upload text file"><a class="upload-file-link menu-button" data-action="file.upload" aria-label="Upload text file" role="button"><i class="fa fa-upload"></i></a></dd></dl><div class="clearfix"></div></div><div class="file-content-container"><div class="file-content ace_editor active ace-xcode" style="font-size: inherit;"><textarea class="ace_text-input" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0; height: 14.0167px; width: 6.6px; left: 51px; top: 0px;" wrap="off">  </textarea><div class="ace_gutter"><div class="ace_layer ace_gutter-layer ace_folding-enabled" style="margin-top: 0px; height: 557.033px; width: 47px;"><div class="ace_gutter-cell " style="height: 14.0167px;">1</div><div class="ace_gutter-cell " style="height: 14.0167px;">2</div><div class="ace_gutter-cell " style="height: 14.0167px;">3</div><div class="ace_gutter-cell " style="height: 14.0167px;">4<span class="ace_fold-widget ace_start ace_open" style="height: 14.0167px;"></span></div><div class="ace_gutter-cell " style="height: 14.0167px;">5</div><div class="ace_gutter-cell " style="height: 14.0167px;">6</div><div class="ace_gutter-cell " style="height: 14.0167px;">7<span class="ace_fold-widget ace_start ace_open" style="height: 14.0167px;"></span></div><div class="ace_gutter-cell " style="height: 14.0167px;">8</div><div class="ace_gutter-cell " style="height: 14.0167px;">9</div><div class="ace_gutter-cell " style="height: 14.0167px;">10</div><div class="ace_gutter-cell " style="height: 14.0167px;">11</div><div class="ace_gutter-cell " style="height: 14.0167px;">12</div><div class="ace_gutter-cell " style="height: 14.0167px;">13</div></div><div class="ace_gutter-active-line" style="top: 0px; height: 14.0167px;"></div></div><div class="ace_scroller" style="left: 47px; right: 0px; bottom: 0px;"><div class="ace_content" style="margin-top: 0px; width: 508px; height: 557.033px; margin-left: 0px;"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 532px; visibility: hidden;"></div></div><div class="ace_layer ace_marker-layer"><div class="ace_active-line" style="height:14.016677856445312px;top:0px;left:0;right:0;"></div></div><div class="ace_layer ace_text-layer" style="padding: 0px 4px;"><div class="ace_line" style="height:14.016677856445312px"><span class="ace_comment"># Let's open the poem.txt file, create a file object, and print out the</span></div><div class="ace_line" style="height:14.016677856445312px"><span class="ace_comment"># file text line by line.</span></div><div class="ace_line" style="height:14.016677856445312px"><span class="ace_comment"># Note the poem.txt tab above.</span></div><div class="ace_line" style="height:14.016677856445312px"><span class="ace_keyword">with</span> <span class="ace_support ace_function">open</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'poem.txt'</span><span class="ace_paren ace_rparen">)</span> <span class="ace_keyword">as</span> <span class="ace_identifier">poem_file</span>:</div><div class="ace_line" style="height:14.016677856445312px"><span class="ace_indent-guide">  </span>  <span class="ace_identifier">text</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">poem_file</span>.<span class="ace_identifier">readlines</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span></div><div class="ace_line" style="height:14.016677856445312px"><span class="ace_indent-guide">  </span>  <span class="ace_keyword">print</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">"This file is {} lines long"</span>.<span class="ace_support ace_function">format</span><span class="ace_paren ace_lparen">(</span><span class="ace_support ace_function">len</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">text</span><span class="ace_paren ace_rparen">)))</span></div><div class="ace_line" style="height:14.016677856445312px"><span class="ace_indent-guide">  </span>  <span class="ace_keyword">for</span> <span class="ace_identifier">line</span> <span class="ace_keyword">in</span> <span class="ace_identifier">text</span>:</div><div class="ace_line" style="height:14.016677856445312px"><span class="ace_indent-guide">  </span><span class="ace_indent-guide">  </span><span class="ace_indent-guide">  </span>  <span class="ace_keyword">print</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">line</span><span class="ace_paren ace_rparen">)</span></div><div class="ace_line" style="height:14.016677856445312px"></div><div class="ace_line" style="height:14.016677856445312px"><span class="ace_comment"># Try loading and printing the purchases.csv file line by line just</span></div><div class="ace_line" style="height:14.016677856445312px"><span class="ace_comment"># just like we did for poem.txt.</span></div><div class="ace_line" style="height:14.016677856445312px"></div><div class="ace_line" style="height:14.016677856445312px"></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer ace_hidden-cursors"><div class="ace_cursor" style="left: 4px; top: 0px; width: 6.6px; height: 14.0167px;"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="display: none; width: 18px; bottom: 0px;"><div class="ace_scrollbar-inner" style="width: 18px; height: 182.217px;"></div></div><div class="ace_scrollbar ace_scrollbar-h" style="display: none; height: 18px; left: 47px; right: 0px;"><div class="ace_scrollbar-inner" style="height: 18px; width: 508px;"></div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;"></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; font-size-adjust: inherit; font-kerning: inherit; font-optical-sizing: inherit; font-language-override: inherit; font-feature-settings: inherit; font-variation-settings: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></div><div class="file-content ace_editor ace-xcode" style="font-size: inherit;" data-children-count="1"><textarea class="ace_text-input" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0;" wrap="off">  </textarea><div class="ace_gutter"><div class="ace_layer ace_gutter-layer ace_folding-enabled"></div><div class="ace_gutter-active-line"></div></div><div class="ace_scroller"><div class="ace_content"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 4px; visibility: hidden;"></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_text-layer" style="padding: 0px 4px;"></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer ace_hidden-cursors"><div class="ace_cursor"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="display: none; width: 18px;"><div class="ace_scrollbar-inner" style="width: 18px;"></div></div><div class="ace_scrollbar ace_scrollbar-h" style="display: none; height: 18px;"><div class="ace_scrollbar-inner" style="height: 18px;"></div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;"></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></div><div class="file-content ace_editor ace-xcode" style="font-size: inherit;" data-children-count="1"><textarea class="ace_text-input" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0;" wrap="off">  </textarea><div class="ace_gutter"><div class="ace_layer ace_gutter-layer ace_folding-enabled"></div><div class="ace_gutter-active-line"></div></div><div class="ace_scroller"><div class="ace_content"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 4px; visibility: hidden;"></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_text-layer" style="padding: 0px 4px;"></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer ace_hidden-cursors"><div class="ace_cursor"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="display: none; width: 18px;"><div class="ace_scrollbar-inner" style="width: 18px;"></div></div><div class="ace_scrollbar ace_scrollbar-h" style="display: none; height: 18px;"><div class="ace_scrollbar-inner" style="height: 18px;"></div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;"></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></div></div><div class="info-area collapsed"><div class="info-quick"></div><div class="scroll-wrap"><div class="info-full"></div></div><a class="expander fa"></a></div></div><form id="file-upload-form"><input type="file" name="file-upload" id="file-upload" class="hidden" tabindex="-1"></form></div>
+
+  
+  <div id="dragbar"></div>
+  
+
+  <div id="codeOutput" class="codeOutput hide" data-interface="output">
+    
+
+    <div id="errorConnecting" class="hide">
+      <p>There was a problem connecting to the server.<br><br>Please check your connection and try running the trinket again.</p>
+    </div>
+
+    <div id="outputTabs" class="hideInstructions">
+      <div class="active menu-button" id="codeOutputTab" data-action="output.view">Result</div>
+      <div class="menu-button" id="instructionsTab" data-action="instructions.view"><i class="fa fa-list"></i> Instructions</div>
+    </div>
+
+    <div id="outputContainer" class="withoutTabs">
+      <div id="console-wrap">
+        <div id="python3-console-output" aria-live="polite" aria-label="Code Output"></div>
+        <a id="reset-output" class="hide" title="clear output"><i class="fa fa-ban"></i></a>
+      </div>
+    </div>
+
+    <div id="instructionsContainer" class="hide">
+
+  <div id="instructionsOutput"></div>
+</div>
+
+    
+
+  </div>
+
+  
+  <div id="runFirstModal" class="reveal-modal small" data-interface="run-modal" data-reveal="" data-css-top="20" data-offset="200">
+    <h2>Run your code first!</h2>
+    <p class="lead">
+      It looks like you haven't tried running your new code.
+    </p>
+    <p>Try clicking
+    <a id="modalRun" class="button tiny" data-action="code.run"><i class="fa fa-play"></i>&nbsp;Run</a>
+    and if you like the result, try sharing again.</p>
+    <a class="close-reveal-modal">×</a>
+  </div>
+  
+
+
+        </div>
+      </section>
+
+      <a class="exit-off-canvas"></a>
+
+    
+
+    </div>
+  </div>
+
+  
+  <script id="statusMessageTemplate" type="text/html">
+    <div id="statusMessages" aria-live="assertive" role="alert" tabindex=0 data-inteface="alert" data-alert class="alert-box {{type}}">
+      <div>{{message}}</div>
+      <a href="#" title="Close message" class="close" aria-label="Close Alert" role="button"><i class="fa fa-times-circle"></i></a>
+    </div>
+  </script>
+  
+
+  <!-- the response-indicator divs allow javascript to determine which responsive size is being applied -->
+  <div class="responsive-indicator show-for-small-only" data-size="small"></div>
+  <div class="responsive-indicator show-for-medium-only" data-size="medium"></div>
+  <div class="responsive-indicator show-for-large-up" data-size="large"></div>
+
+  
+
+  <div id="confirmResetModal" class="reveal-modal medium" data-reveal="" data-css-top="35">
+    <div class="row">
+      <h2 id="modalTitle">Are you sure?</h2>
+      <p class="lead">Resetting will undo all of your current changes.</p>
+      <a class="button caution menu-button allow-original" data-action="code.cancel-reset">Cancel</a>
+      <a class="button danger menu-button allow-original" data-action="code.confirm-reset">Yes, I am sure.</a>
+      <a class="close-reveal-modal" aria-label="Close">×</a>
+    </div>
+  </div>
+
+  <div id="controlRoomModal" class="reveal-modal large" data-reveal="" data-css-top="35" data-interface="control-room">
+    <p><strong>Broadcast Control Room</strong></p>
+  
+    <a class="close-reveal-modal" aria-label="Close">×</a>
+  </div>
+
+  
+      
+  
+  <ul id="displayOptionTextList" class="hide">
+    <li data-value="">Show <span class="blocksOrCode">code</span> and output side-by-side (smaller screens will only show one at a time)</li>
+    <li data-value="outputOnly">Only show output (hide the <span class="blocksOrCode">code</span>)</li>
+    <li data-value="toggleCode">Only show <span class="blocksOrCode">code</span> or output (let users toggle between them)</li>
+  </ul>
+  <div id="shareModal" class="reveal-modal full" data-reveal="" data-css-top="0" data-offset="0" role="dialog" aria-label="Share Trinket Link Dialog">
+    <div class="row">
+      <div class="small-12 columns">
+      <div class="row">
+      <span class="modal-title" role="heading">Share Your Code!
+        <span id="addthisModal">
+          <span id="addthisWrapper">
+            <span id="addthis" class="addthis_toolbox addthis_floating_style addthis_32x32_style" addthis:url="https://trinket.io/python3/4f3d19d76f">
+              <a class="addthis_button_facebook"></a>
+              <a class="addthis_button_twitter"></a>
+              <a class="addthis_button_google_plusone_share"></a>
+            </span>
+          </span>
+        </span>
+      </span>
+    </div>
+    <form>
+      <div class="row">
+        <label for="shareURL"><i>Copy the link or click a button above to share your code</i></label>
+          <div id="shareUrl" class="faux-input" data-metric="linkShares" role="textbox" tabindex="0" aria-label="Copy this link to share your trinket."></div>
+      </div>
+      <div class="row">
+        <fieldset data-children-count="3">
+          <legend>Customize</legend>
+          
+          <div id="shareRunOption" data-children-count="1">
+            <select id="runOptionLink" name="runOptionLink" class="runOptions" data-type="shareUrl" data-trinket-shortcode="" data-trinket-runmode="">
+              <option value="" selected="selected">Allow either Run or Interactive console</option>
+              <option value="run">Run code only</option>
+              <option value="console">Interactive console only</option>
+            </select>
+          </div>
+          
+          
+          <div id="shareDisplayOptions" data-children-count="1">
+            <select id="displayOptionLink" name="displayOptionLink" class="displayOptions" data-type="shareUrl" data-trinket-shortcode="" data-trinket-runmode="">
+              <option value="" selected="selected">Show code and output side-by-side (smaller screens will only show one at a time)</option>
+              <option value="outputOnly">Only show output (hide the code)</option>
+              <option value="toggleCode">Only show code or output (let users toggle between them)</option>
+            </select>
+          </div>
+          
+          
+          <input type="checkbox" id="showInstructionsShareToggle" name="showInstructionsShare" class="checkboxToggle" value="shareUrl"><label for="showInstructionsShareToggle">Show instructions first when loaded</label>
+          
+        </fieldset>
+      </div>
+    </form>
+    
+    <div id="share-pro-tip" class="row">
+
+<span class="label round"><i class="fa fa-info-circle"></i> pro tip</span>
+ You can save a copy for yourself with the <i class="fa fa-copy"></i> Copy or <i class="fa fa-save"></i> Remix button.
+</div>
+    
+    </div>
+    </div>
+    <a class="close-reveal-modal">×</a>
+  </div>
+  <div id="embedModal" class="reveal-modal full" data-reveal="" data-css-top="0" data-offset="0" role="dialog" aria-label="Embed Trinket Dialog">
+    <div class="row">
+      <span class="modal-title" role="heading">Embed Your Code!</span>
+    </div>
+    <form>
+      <div class="row">
+        <label for="embedCode">Embed this code on your site</label>
+      </div>
+      <div class="row">
+        <div class="small-12 columms">
+          <div id="embedCode" class="faux-input textarea" data-metric="embedShares" role="textbox" aria-multiline="false" tabindex="0" aria-label="Copy this embed code"></div>
+        </div>
+      </div>
+      <div class="row">
+        <fieldset>
+          <legend>Customize</legend>
+      
+        <div id="embedRunOption" data-children-count="1">
+          <select id="runOptionEmbed" name="runOptionEmbed" class="runOptions" data-type="embedCode" data-trinket-shortcode="" data-trinket-runmode="">
+            <option value="" selected="selected">Allow either Run or Interactive console</option>
+            <option value="run">Run code only</option>
+            <option value="console">Interactive console only</option>
+          </select>
+        </div>
+      
+      
+      <div id="embedDisplayOptions" data-children-count="3">
+        <select id="displayOptionEmbed" name="displayOptionEmbed" class="displayOptions" data-type="embedCode" data-trinket-shortcode="" data-trinket-runmode="">
+          <option value="" selected="selected">Show code and output side-by-side (smaller screens will only show one at a time)</option>
+          <option value="outputOnly">Only show output (hide the code)</option>
+          <option value="toggleCode">Only show code or output (let users toggle between them)</option>
+        </select>
+        
+        <input type="checkbox" id="autorunEmbedToggle" name="autorunEmbed" class="checkboxToggle" value="embedCode"><label for="autorunEmbedToggle">Auto run trinket when loaded</label>
+        
+        
+        
+          <input type="checkbox" id="showInstructionsEmbedToggle" name="showInstructionsEmbed" class="checkboxToggle" value="embedCode"><label for="showInstructionsEmbedToggle">Show instructions first when loaded</label>
+        
+      </div>
+      
+        </fieldset>
+      </div>
+    </form>
+    <a class="close-reveal-modal">×</a>
+  </div>
+  <div id="emailModal" class="reveal-modal full" data-reveal="" data-css-top="0" data-offset="0" role="dialog" aria-label="Email Trinket Dialog">
+    <div class="row first-row">
+     <span class="modal-title" role="heading">Email Your Code!</span>
+    </div>
+    <form id="emailModalForm" data-trinket-id="" role="form">
+      <div class="row">
+        <div class="small-12 medium-3 columns">
+          <label class="inline" for="share-email">Send To</label>
+        </div>
+        <div class="small-12 medium-9 columns" data-children-count="1">
+          <input type="email" id="share-email" name="email" placeholder="What email address should we send the link to?" required="" data-kwimpalastatus="alive" data-kwimpalaid="1572795818912-4">
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-12 medium-3 columns">
+          <label class="inline" for="share-yourname">Your Name</label>
+        </div>
+        <div class="small-12 medium-9 columns" data-children-count="1">
+          <input type="text" id="share-yourname" name="yourname" placeholder="What is your name?" required="" data-kwimpalastatus="alive" data-kwimpalaid="1572795818912-5">
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-12 medium-3 columns">
+          <label class="inline" for="share-youremail">Your Email</label>
+        </div>
+        <div class="small-12 medium-9 columns" data-children-count="1">
+          <input type="email" id="share-youremail" name="youremail" placeholder="Your email address - so the recipient can reply to you" data-kwimpalastatus="alive" data-kwimpalaid="1572795818912-6">
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-12 medium-3 columns">
+          <input id="emailToken" name="emailToken" type="hidden" value="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzaG9ydENvZGUiOiI0ZjNkMTlkNzZmIiwiaWF0IjoxNTcyNzk1ODE4fQ.0jQUpb9uR_AWnpLYY1cWlSdP7UA0OxAjteFLzVa1boU">
+          <input id="sendEmail" class="button success small" type="submit" value="Send">
+        </div>
+        <div id="emailAlert" class="small-12 medium-9 columns end hide"></div>
+      </div>
+    </form>
+    
+    <div class="row">
+
+<span class="label round"><i class="fa fa-info-circle"></i> pro tip</span>
+ You can save a copy for yourself with the <i class="fa fa-copy"></i> Copy or <i class="fa fa-save"></i> Remix button.
+</div>
+    
+    <a class="close-reveal-modal">×</a>
+  </div>
+
+<div id="publishModal" class="reveal-modal full" data-reveal="" data-css-top="0" data-offset="0" role="dialog" aria-label="Publish Trinket Dialog">
+  <div class="row">
+    <span class="modal-title" role="heading">Publish Your Trinket!</span>
+  </div>
+  <form id="publishModalForm" data-trinket-id="" role="form">
+    <div class="row">
+      <div class="small-12 medium-3 columns">
+        <label class="inline" for="publish-slug">
+          Site Name <i class="fa fa-info-circle open" data-tooltip="" aria-haspopup="true" title="Name must be unique. Lowercase letters, numbers, and dashes are allowed." data-selector="tooltip-k2j60sv40" aria-describedby="tooltip-k2j60sv40"></i>
+        </label>
+      </div>
+      <div class="small-10 medium-5 columns" data-children-count="1">
+        <input type="text" id="publish-slug" name="slug" required="">
+      </div>
+      <div class="small-2 medium-4 columns">
+        <i id="slug-icon-status"></i>
+      </div>
+    </div>
+    <div id="slug-status" class="row hide">
+      <div class="small-12 medium-offset-3 medium-5 columns end">
+        <label id="slug-status-text">test</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-12 medium-3 columns">
+        <label class="inline">Site URL</label>
+      </div>
+      <div class="small-12 medium-9 columns">
+        <p><a href="" id="published-url" target="_blank"></a></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-6 columns">
+        <a id="publishTrinket" class="button success small"><i class="fa fa-book"></i> <span id="publish-text">Publish</span></a>
+      </div>
+      <div class="small-6 columns">
+        <a id="unpublishTrinket" class="button caution small right">Unpublish</a>
+      </div>
+    </div>
+  </form>
+  <a class="close-reveal-modal">×</a>
+</div>
+
+<div id="addToGroupModal" class="shared-modal reveal-modal full" data-reveal="" data-css-top="0" data-offset="0">
+  <div class="row">
+    <div id="add-to-group-messages"></div>
+    <h2>Add to Group</h2>
+  </div>
+  <div class="row">
+    <div class="medium-12 large-6 columns">
+      <section id="have-groups" class="hide">
+        <p>Decide which group to add this trinket below.</p>
+        <ul id="groups-list"></ul>
+      </section>
+      <section id="no-groups" class="hide">
+        <p>You don't have any groups that you can add a trinket to — try creating a new one!</p>
+      </section>
+    </div>
+    <div class="medium-12 large-6 columns">
+      <p>You can also create a new group.</p>
+      <form>
+        <div class="row">
+          <div class="small-12 columns" data-children-count="2">
+            <label>What's the Group name?</label>
+            <input type="text" name="name" placeholder="e.g. Introduction to Python" required="">
+
+            <label>What Description should show up on the page?</label>
+            <textarea name="description" rows="2" placeholder="What other information will group members need to know about this group?" required=""></textarea>
+
+            <label>Group code to let others join.</label>
+            <div class="faux-input" id="joinCode"></div>
+            <input type="hidden" name="joinCode" value="">
+
+            <a id="createGroupAddTrinket" data-trinket-id="" class="button success tiny"><i></i> Create Group</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <a class="close-reveal-modal">×</a>
+</div>
+
+  
+
+  
+
+  <div id="upgradeModal" class="reveal-modal full" data-reveal="" data-css-top="0" data-offset="0">
+    
+    
+    <div class="row">
+  <h2>Python 3 Now Available!</h2>
+</div>
+<div class="row">
+  <p>
+    This is a Python 3 trinket. It includes everything in
+    <a href="https://www.python.org/downloads/release/python-365/" target="_blank">Python 3.6.6 <sup><i class="fa fa-external-link"></i></sup></a>
+    as well as scientific libraries like <a href="http://www.scipy.org/" target="_blank">Numpy and SciPy <sup><i class="fa fa-external-link"></i></sup></a>
+    and <a href="http://matplotlib.org/" target="_blank">matplotlib <sup><i class="fa fa-external-link"></i></sup></a>,
+    with more on the way.
+  </p>
+</div>
+<div class="row">
+  <p>
+    <a class="menu-button" data-href="/payment" data-action="open.link">Upgrade</a> to Trinket Code+
+    or Trinket Connect now to create your own Python 3 trinkets!
+    Learn more on our <a class="menu-button" data-href="/plans" data-action="open.link">plans page</a>.
+    We offer a 30-day money back guarantee and you can cancel at any time.
+  </p>
+</div>
+    
+    <a class="close-reveal-modal">×</a>
+  </div>
+
+  
+
+  <ul id="share-options" class="f-dropdown" data-dropdown-content="" role="menu">
+    <li role="menuitem"><a class="menu-button" data-action="sharing.social" data-data=".addthis_button_twitter"><i class="fa fa-twitter"></i>Twitter</a></li>
+    <li role="menuitem"><a class="menu-button" data-action="sharing.social" data-data=".addthis_button_facebook"><i class="fa fa-facebook-square"></i>Facebook</a></li>
+    <li role="menuitem"><a class="menu-button" data-action="sharing.social" data-data=".addthis_button_google_plusone_share"><i class="fa fa-google-plus"></i>Google+</a></li>
+    <li role="menuitem"><a class="menu-button" data-action="sharing.email" role="button"><i class="fa fa-envelope"></i>Email</a></li>
+    <li role="menuitem"><a class="menu-button" data-action="sharing.share" role="button"><i class="fa fa-link"></i>Link</a></li>
+    <li role="menuitem"><a class="menu-button" data-action="sharing.embed" role="button"><i class="fa fa-code"></i>Embed</a></li>
+    
+    <li><a class="menu-button" data-action="mode.download"><i class="fa fa-download"></i>Download</a></li>
+    
+  </ul>
+
+  <ul id="group-share-options" class="f-dropdown" data-dropdown-content="">
+    <li><a class="menu-button" data-action="sharing.group"><i class="fa fa-users"></i>with Group</a></li>
+  </ul>
+
+  
+
+<ul id="run-options" class="f-dropdown" data-dropdown-content="">
+  <li><a class="menu-button" data-action="code.run" data-button="run"><i class="fa fa-play"></i>Run</a></li>
+  <li><a class="menu-button" data-action="code.console" data-button="console"><i class="fa fa-terminal"></i>Console</a></li>
+</ul>
+
+
+
+  
+  <script id="restoreOriginalModalTemplate" type="text/html">
+    <div id="restoreOriginalModal" class="reveal-modal medium" data-reveal data-css-top="35">
+      <h2 id="modalTitle">Reset to the original?</h2>
+      <p class="lead">Resetting will undo all of your current changes.</p>
+      <a class="button small caution" data-action="reject">No, keep my remix.</a>
+      <a class="button small danger" data-action="confirm">Yes, reset to the original.</a>
+      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    </div>
+  </script>
+
+  <script id="unittest-error" type="text/template">
+    <li class="accordion-navigation">
+    <a href="#panel-{{testNumber}}">
+      <div class="row really-wrong">
+        <div class="small-9 column">
+          <p><i class="fa fa-angle-right fa-lg open-close-indicator"></i>{{shortDescription}}</p>
+        </div>
+        <div class="small-3 column">
+        <p class="text-center"><i class="fa fa-circle-o fa-lg"></i></p>
+        </div>
+      </div>
+    </a>
+    <div id="panel-{{testNumber}}" class="content">
+      <p>
+        <strong>Message:</strong> <pre>{{reason}}</pre>
+      </p>
+    </div>
+    </li>
+  </script>
+
+  <script id="unittest-fail" type="text/template">
+    <li class="accordion-navigation">
+    <a href="#panel-{{testNumber}}">
+      <div class="row really-wrong">
+        <div class="small-1 column text-centered">
+          <p><i class="fa fa-angle-right fa-lg open-close-indicator"></i></p>
+        </div>
+        <div class="small-9 column">
+          <p>{{shortDescription}}</p>
+        </div>
+        <div class="small-2 column">
+        <p class="text-center"><i class="fa fa-circle-o fa-lg"></i></p>
+        </div>
+      </div>
+    </a>
+    <div id="panel-{{testNumber}}" class="content">
+      <p>
+        <strong>Description:</strong> {{description}}
+      </p>
+      <p>
+        <strong>Message:</strong> {{reason}}
+      </p>
+    </div>
+    </li>
+  </script>
+
+  <script id="unittest-pass" type="text/template">
+    <li class="accordion-navigation">
+    <a href="#panel-{{testNumber}}">
+      <div class="row really-right">
+        <div class="small-1 column text-centered">
+          <p><i class="fa fa-angle-right fa-lg open-close-indicator"></i></p>
+        </div>
+        <div class="small-9 column">
+          <p>{{shortDescription}}</p>
+        </div>
+        <div class="small-2 column">
+        <p class="text-center"><i class="fa fa-check-circle fa-lg"></i></p>
+        </div>
+      </div>
+    </a>
+    <div id="panel-{{testNumber}}" class="content">
+      <p>
+        <strong>Description:</strong> {{description}}
+      </p>
+    </div>
+    </li>
+  </script>
+
+  
+
+  <script id="userMenuTemplate" type="text/html">
+    
+<li><label><i class="fa fa-external-link"></i>Links</label></li>
+<li>
+  <a class="ui-option owner-option" href="/library/trinkets/4f3d19d76f" target="_blank" tabindex="-1">
+    <i class="fa fa-info-circle"></i>View on trinket
+  </a>
+  <a href="/library/trinkets" target="_blank" tabindex="-1">
+    <i class="fa fa-book"></i>My Trinkets
+  </a>
+</li>
+
+
+  </script>
+
+  <script id="ownerMenuTemplate" type="text/html">
+    <li><label>Options</label></li>
+    <li>
+      <a data-mode="interact" class="right-menu-link menu-button" data-action="code.save">
+        <i class="fa fa-save"></i>Update Original
+      </a>
+    </li>
+    
+<li><label><i class="fa fa-external-link"></i>Links</label></li>
+<li>
+  <a class="ui-option owner-option" href="/library/trinkets/4f3d19d76f" target="_blank" tabindex="-1">
+    <i class="fa fa-info-circle"></i>View on trinket
+  </a>
+  <a href="/library/trinkets" target="_blank" tabindex="-1">
+    <i class="fa fa-book"></i>My Trinkets
+  </a>
+</li>
+
+
+  </script>
+
+  <script id="draftTextTemplate" type="text/html">
+    <a class="menu-button" data-action="code.reset" title="Reset"><i class="fa fa-refresh"></i></a> {{draftText}}
+  </script>
+
+  <script id="addInstructionsTemplate" type="text/html">
+    <p>Click the pencil icon to add instructions to your trinket. When anyone else views this trinket, they'll also be able to view them.</p>
+  </script>
+
+  <script id="editInstructionsTemplate" type="text/html">
+    <div id="embedded-instructions"></div>
+  </script>
+
+  <script id="addInlineCommentTemplate" type="text/html">
+    <div class="comment-wrapper">
+      <div class="comment-heading-container">
+        <div class="comment-avatar-container">
+          <img class="comment-avatar" src="{{avatar}}" width="40" height="40" />
+        </div>
+        <span class="new-comment-container">
+          <textarea class="inline-comment-text"></textarea>
+        </span>
+      </div>
+      <div class="new-comment-actions">
+        <a class="button tiny secondary save-inline-comment"><i class="fa fa-save"></i> Add Comment</a>
+        <a class="button tiny caution cancel-inline-comment">Cancel</a>
+      </div>
+    </div>
+  </script>
+
+  <script id="inlineCommentTemplate" type="text/html">
+    <div id="{{commentId}}" class="comment-wrapper">
+      <div class="comment-heading-container">
+        <div class="comment-avatar-container">
+          <img class="comment-avatar" src="{{avatar}}" width="40" height="40" />
+        </div>
+        <div class="comment-info-container">
+          <strong>{{username}}</strong>
+          {{commentActions}}
+        </div>
+      </div>
+      <div id="comment-container-{{commentId}}" class="comment-container">
+        {{comment}}
+      </div>
+      <div id="edit-comment-container-{{commentId}}" class="edit-comment-container hide">
+        <textarea id="edit-inline-comment-{{commentId}}" class="inline-comment-text"></textarea>
+      </div>
+    </div>
+  </script>
+
+  <script id="inlineCommentActions" type="text/html">
+    <div class="comment-actions-wrapper">
+      <a class="comment-actions move-comment-up disabled" data-file-index="{{index}}" data-comment-id="{{commentId}}" title="Move comment up"><i class="fa fa-angle-up"></i></a>
+      <a class="comment-actions move-comment-down disabled" data-file-index="{{index}}" data-comment-id="{{commentId}}" title="Move comment down"><i class="fa fa-angle-down"></i></a>
+      <a class="comment-actions" data-dropdown="comment-actions-{{commentId}}" title="More options"><i class="fa fa-ellipsis-v"></i></a>
+    </div>
+    <ul id="comment-actions-{{commentId}}" class="f-dropdown" data-dropdown-content>
+      <li><a class="edit-inline-comment" data-comment-id="{{commentId}}"><i class="fa fa-pencil fa-fw"></i> Edit comment</a></li>
+      <li><a class="confirm-remove-inline-comment" data-comment-id="{{commentId}}"><i class="fa fa-trash-o alert fa-fw"></i> Remove comment</a></li>
+    </ul>
+    <div class="confirm-remove-comment-container hide" id="confirm-remove-comment-container-{{commentId}}">
+      <strong>Remove this comment?</strong><br /><br />
+      <a class="confirm-remove-comment button tiny danger" data-file-index="{{index}}" data-comment-id="{{commentId}}"><i class="fa fa-trash-o"></i> Remove</a>
+      <a class="cancel-remove-comment button tiny caution" data-comment-id="{{commentId}}">Cancel</a>
+    </div>
+    <div class="update-comment-container hide" id="update-comment-container-{{commentId}}">
+      <a class="update-comment button tiny secondary" data-file-index="{{index}}" data-comment-id="{{commentId}}"><i class="fa fa-save"></i> Update</a>
+      <a class="cancel-update-comment button tiny caution" data-comment-id="{{commentId}}">Cancel</a>
+    </div>
+  </script>
+  <script id="inlineCommentDismiss" type="text/html">
+    <div class="comment-actions-wrapper">
+      <a class="comment-actions" data-dropdown="comment-actions-{{commentId}}"><i class="fa fa-ellipsis-v"></i></a>
+    </div>
+    <ul id="comment-actions-{{commentId}}" class="f-dropdown" data-dropdown-content>
+      <li><a class="confirm-remove-inline-comment" data-comment-id="{{commentId}}"><i class="fa fa-trash-o alert fa-fw"></i> Remove comment</a></li>
+    </ul>
+    <div class="confirm-remove-comment-container hide" id="confirm-remove-comment-container-{{commentId}}">
+      <strong>Remove this comment?</strong><br /><br />
+      <a class="confirm-remove-comment button tiny danger" data-file-index="{{index}}" data-comment-id="{{commentId}}"><i class="fa fa-trash-o"></i> Remove</a>
+      <a class="cancel-remove-comment button tiny caution" data-comment-id="{{commentId}}">Cancel</a>
+    </div>
+  </script>
+  
+
+  
+
+  <script src="4f3d19d76f_data/localStorage.js" type="text/javacript"></script>
+
+  
+  <script src="4f3d19d76f_data/jszip.js"></script>
+  <script src="4f3d19d76f_data/jszip-utils.js" type="text/javascript"></script>
+  <!--[if IE]>
+  <script src="/cache-prefix-1572795818471dist/jszip-utils-ie.min.js" type="text/javascript"></script>
+  <![endif]-->
+  <script src="4f3d19d76f_data/FileSaver.js"></script>
+  
+
+  <script src="4f3d19d76f_data/lodash.js"></script>
+  <script src="4f3d19d76f_data/bluebird.js"></script>
+  <script src="4f3d19d76f_data/moment.js" type="text/javascript"></script>
+
+  
+
+  
+  <script src="4f3d19d76f_data/socket.js"></script>
+
+  
+  <script src="4f3d19d76f_data/sockjs.js"></script>
+  <script src="4f3d19d76f_data/ace.js"></script>
+  <script src="4f3d19d76f_data/ext-modelist.js"></script>
+  <script src="4f3d19d76f_data/ext-language_tools.js"></script>
+  <script type="text/javascript" src="4f3d19d76f_data/diff_match_patch.js"></script>
+  <script type="text/javascript" src="4f3d19d76f_data/dropzone.js"></script>
+  <script src="4f3d19d76f_data/marked.js"></script>
+  <script src="4f3d19d76f_data/highlight.js"></script>
+  <script src="4f3d19d76f_data/trinket-config.js"></script>
+  <script src="4f3d19d76f_data/trinket-markdown.js"></script>
+  
+
+  <script type="text/javascript">
+    window.trinketSocketConfig = {
+        protocol         : 'https'
+      , port             : ''
+      , hostname         : 'pysocket.trinket.io'
+      , autocompletePath : '/autocomplete'
+    };
+  </script>
+
+  <script src="4f3d19d76f_data/jquery-ui.js"></script>
+  
+
+  
+    <script src="4f3d19d76f_data/embed-python3-b4d9c56f.js" type="text/javascript"></script>
+    
+    <script type="text/javascript">
+apiCall = function apiCall(event) {
+  event.preventDefault();
+
+  $('#spinner-container').removeClass('hide').addClass('fa fa-spinner fa-spin');
+  $('#interest-go').toggleClass('disabled');
+
+  var url = '/api/interest';
+  var submitting = $.post(url, {
+    email : $('#interest-email-address').val(),
+    page  : 'python3-embed'
+  });
+
+  submitting.done(function(data) {
+    setTimeout(function() {
+      $('#spinner-container').removeClass('fa fa-spinner fa-spin').addClass('hide');
+      $('#interest-go').toggleClass('disabled');
+
+      $('#success-box').fadeIn();
+      setTimeout(function() {
+        $('#success-box').fadeOut();
+      }, 20000);
+    }, 1000);
+  });
+};
+
+$('#interest-go').click(apiCall);
+$('#interest-signup-form').submit(function() {
+  $('#interest-go').click();
+});
+</script>
+
+  
+
+
+  
+  
+  
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 970987464;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<div style="display:none">
+<script type="text/javascript" src="4f3d19d76f_data/conversion.js">
+</div>
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/970987464/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+  
+
+  
+  
+<script src="4f3d19d76f_data/oct.js" type="text/javascript" async="true"></script>
+    
+      
+  
+<script type="text/javascript">
+twttr.conversion.trackPid('l4kgy', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=l4kgy&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+<img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=l4kgy&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" /></noscript>
+  
+
+    
+    
+  
+
+
+    
+      
+
+<script type="text/javascript" src="4f3d19d76f_data/addthis_widget.js"></script>
+<script type="text/javascript">
+  var addthis_config = {
+    "data_track_addressbar" : true
+    , "data_ga_property"    : "UA-46899028-1"
+    , "data_ga_social"      : true
+    , "pubid"               : "ra-5344021135dae100"
+  };
+  var addthis_share = {
+    passthrough : {
+      twitter : {
+        related : 'trinketapp,hauspoor',
+        text : 'Check out this awesome runnable # Trinket! #TeachWithCode'
+      }
+    },
+    url_transforms : {
+      shorten : {
+        twitter : 'bitly'
+      }
+    },
+    shorteners : {
+      bitly : {}
+    }
+  };
+  $(document).ready(function() {
+    addthis.init();
+  });
+</script>
+
+
+    
+  
+
+
+
+</div><div class="tab-options" role="button"><ul><li><a class="file-remove-link menu-button" data-action="file.remove"><i class="fa fa-trash"></i></a></li><li><a class="file-rename-link menu-button" data-action="file.rename"><i class="fa fa-pencil"></i></a></li></ul></div><div class="editor-tooltip" style="display: none;"></div><span data-selector="tooltip-k2j60sv40" id="tooltip-k2j60sv40" class="tooltip" role="tooltip">Name must be unique. Lowercase letters, numbers, and dashes are allowed.<span class="nub"></span></span></body></html>
