@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <script async="" src="scevent.js"></script><script>
+    (function(win, doc, sdk_url){
+      if(win.snaptr) return;
+      var tr=win.snaptr=function(){
+        tr.handleRequest? tr.handleRequest.apply(tr, arguments):tr.queue.push(arguments);
+      };
+      tr.queue = [];
+      var s='script';
+      var new_script_section=doc.createElement(s);
+      new_script_section.async=!0;
+      new_script_section.src=sdk_url;
+      var insert_pos=doc.getElementsByTagName(s)[0];
+      insert_pos.parentNode.insertBefore(new_script_section, insert_pos);
+    })(window, document, 'https://sc-static.net/scevent.min.js');
+    snaptr('cm', { 'sync_modes': [100, 110, 120, 130, 140] });
+  </script>
+</head>
+<body>
+<form method="GET" action="https://tr.snapchat.com/cm/s" target="snap07378999649442984" accept-charset="utf-8" style="display: none;"><iframe id="snap07378999649442984" name="snap07378999649442984"></iframe><input name="pnid" value="110"><input name="cb" value="1574127100243"></form><form method="GET" action="https://tr.snapchat.com/cm/s" target="snap043178460527672835" accept-charset="utf-8" style="display: none;"><iframe id="snap043178460527672835" name="snap043178460527672835"></iframe><input name="pnid" value="120"><input name="cb" value="1574127100245"></form><form method="GET" action="https://tr.snapchat.com/cm/s" target="snap014768175676149964" accept-charset="utf-8" style="display: none;"><iframe id="snap014768175676149964" name="snap014768175676149964"></iframe><input name="pnid" value="130"><input name="cb" value="1574127100246"></form><form method="GET" action="https://tr.snapchat.com/cm/s" target="snap04798536586664499" accept-charset="utf-8" style="display: none;"><iframe id="snap04798536586664499" name="snap04798536586664499"></iframe><input name="pnid" value="140"><input name="cb" value="1574127100248"></form></body></html>
