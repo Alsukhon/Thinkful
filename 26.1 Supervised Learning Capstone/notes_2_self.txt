@@ -1,0 +1,5 @@
+backers: check in EDA
+a tool that someone starting at kickstarter can use to identify probabil of successsss
+in eda after finding name categs, go into names & successes or failure
+group by categs & study names
+use visualization to discover names & categories

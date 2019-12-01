@@ -1,0 +1,3 @@
+C tells svm how much to avoid misclassification
+smaller c 
+we should try a range of c values 
