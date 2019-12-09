@@ -1,0 +1,10 @@
+
+(function() {
+  if (document.createElement
+  && document.body) {
+    var nm_script = document.createElement('SCRIPT');
+    nm_script.src = document.location.protocol + '//nan.netmng.com/?aid=5769&siclientid=103908&ref=https%3A%2F%2Foverview.thinkful.com%2Fprograms%2Fdata-science&cch';
+    document.body.appendChild(nm_script);
+  }
+})();
+ 
